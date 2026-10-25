@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you cite or use these experimental results, please cite as below."
+title: "Qwen3.8-27B + DFlash2 on Apple Silicon: Speculative Decoding, Prefix Cache, and Serving Controller Analysis"
+authors:
+  - family-names: Xu
+    given-names: Chengyi
+    orcid: "https://orcid.org/0009-0008-1277-6670"
+  - name: Nexora
+version: 1.0.0
+date-released: 2026-10-25
+type: dataset
+url: "https://github.com/chengyixu/qwen38-omlx-dflash2-eval"
+license: MIT
+abstract: "Benchmark results, deployment manifests, and process management controllers evaluating Qwen3.8-27B 4-bit with DFlash2 speculative decoding and L1 in-memory prefix caching on Apple Silicon (M4 Max 64GB). Includes analysis of speculative acceptance rates, prefix caching trade-offs, and measurement caveats."

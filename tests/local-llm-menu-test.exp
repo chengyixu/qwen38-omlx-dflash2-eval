@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+# Finder launches the Desktop controller with a TTY; prove menu selection
+# reaches the chosen read-only action before closing the terminal window.
+set timeout 10
+set root [file normalize [file join [file dirname [info script]] ..]]
+set controller [file join $root bin local-llm.command]
+
+spawn $controller
+expect "Choose an action:"
+send "4\r"
+expect "RUNNING (ready):"
+expect "Press Return to close..."
+send "\r"
+expect eof
